@@ -29,6 +29,14 @@ fun SchoolItem(
         Column(
             modifier = Modifier.weight(1f)
         ) {
+            Spacer(modifier = Modifier.height(8.dp))
+            Text(
+                text = "School Id: ${school.schoolId.toString()}",
+                fontWeight = FontWeight.Light,
+                color = MaterialTheme.colors.onBackground
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
             Row(
                 modifier = Modifier.fillMaxWidth()
             ) {
@@ -42,6 +50,20 @@ fun SchoolItem(
                     modifier = Modifier.weight(1f)
                 )
             }
+
+            Spacer(modifier = Modifier.height(8.dp))
+            Text(
+                text = "Phone: ${school.telephone}",
+                fontWeight = FontWeight.Light,
+                color = MaterialTheme.colors.onBackground
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+            Text(
+                text = "Email: ${school.email}",
+                fontStyle = FontStyle.Italic,
+                color = MaterialTheme.colors.onBackground
+            )
         }
     }
 }
