@@ -6,6 +6,7 @@ import androidx.room.PrimaryKey
 /**
  * Created by anamika on 03,November,2022
  */
+
 @Entity
 data class SchoolListingEntity(
     val schoolId : Int?,
